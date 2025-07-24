@@ -1,59 +1,95 @@
 ---
-import '../styles/reset.css';
+import "../styles/reset.css";
 ---
 
 <!doctype html>
 <html lang="ja">
-	<head>
-		
-		<!-- Google Analytics START -->
-		<script
-			is:inline
-			type="text/partytown"
-			async
-			src="https://www.googletagmanager.com/gtag/js?id=G-60WC87RR9P"
-		></script>
-		<script is:inline type="text/partytown">
-			window.dataLayer = window.dataLayer || [];
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag("js", new Date());
-			gtag("config", "G-60WC87RR9P");
-		</script>
-		<!-- Google Analytics END -->
+  <head>
+    <!-- Optimize Next -->
+    <script is:inline>
+      (function (p, r, o, j, e, c, t, g) {
+        p["_" + t] = {};
+        g = r.createElement("script");
+        g.src = "https://www.googletagmanager.com/gtm.js?id=GTM-" + t;
+        r[o].prepend(g);
+        g = r.createElement("style");
+        g.innerText = "." + e + t + "{visibility:hidden!important}";
+        r[o].prepend(g);
+        r[o][j].add(e + t);
+        setTimeout(function () {
+          if (r[o][j].contains(e + t)) {
+            r[o][j].remove(e + t);
+            p["_" + t] = 0;
+          }
+        }, c);
+      })(
+        window,
+        document,
+        "documentElement",
+        "classList",
+        "loading",
+        2000,
+        "597TPF5W"
+      );
+    </script>
+    <!-- End Optimize Next -->
 
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>空画像ジェネレーター</title>
-		<!-- SEO: Description & Keywords -->
-		<meta name="description" content="手軽に空画像を生成できる日本語対応の無料ジェネレーター" />
+    <!-- Google Analytics START -->
+    <script
+      is:inline
+      type="text/partytown"
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-60WC87RR9P"></script>
+    <script is:inline type="text/partytown">
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-60WC87RR9P");
+    </script>
+    <!-- Google Analytics END -->
 
-		<!-- Open Graph -->
-		<meta property="og:type" content="website" />
-		<meta property="og:site_name" content="空画像ジェネレーター" />
-		<meta property="og:title" content="空画像ジェネレーター" />
-		<meta property="og:description" content="手軽に空画像を生成できる日本語対応の無料ジェネレーター" />
-		<meta property="og:locale" content="ja_JP" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>空画像ジェネレーター</title>
+    <!-- SEO: Description & Keywords -->
+    <meta
+      name="description"
+      content="手軽に空画像を生成できる日本語対応の無料ジェネレーター"
+    />
 
-		<!-- Twitter Card -->
-		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="空画像ジェネレーター" />
-		<meta name="twitter:description" content="手軽に空画像を生成できる日本語対応の無料ジェネレーター" />
-	</head>
-	<body>
-		<slot />
-	</body>
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="空画像ジェネレーター" />
+    <meta property="og:title" content="空画像ジェネレーター" />
+    <meta
+      property="og:description"
+      content="手軽に空画像を生成できる日本語対応の無料ジェネレーター"
+    />
+    <meta property="og:locale" content="ja_JP" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="空画像ジェネレーター" />
+    <meta
+      name="twitter:description"
+      content="手軽に空画像を生成できる日本語対応の無料ジェネレーター"
+    />
+  </head>
+  <body>
+    <slot />
+  </body>
 </html>
 
 <style>
-	html,
-	body {
-		background-color: #f5f7ff;
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
+  html,
+  body {
+    background-color: #f5f7ff;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
 </style>
